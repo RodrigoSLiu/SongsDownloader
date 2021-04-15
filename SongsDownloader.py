@@ -8,7 +8,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 path = input("Enter the path of your file: ") #C:\Users\---\Desktop\
 uri = input("Enter the Spotify playlist uri: ") #spotify:playlist:4FroAeQwZrJCYYyJroHd9V
 spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(
-    client_id='b714b08a81b3470ab939354358c324c8', client_secret='83a32642aa4646009294ac6430b65dbe'))
+    client_id='', client_secret=''))
 
 songs = spotify.playlist_items(uri)
 tracks = []
